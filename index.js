@@ -1,5 +1,5 @@
-const subjects = ["she", "he", "it", "they", "they"];
-const objects = ["her", "him", "it", "them", "them"];
+const subjects = ["she", "he", "it", "they", "they", "I", "you"];
+const objects = ["her", "him", "it", "them", "them", "me", "you"];
 
 window.addEventListener("load", () => {
   let subject = subjects; // copy of array for manipulating
@@ -16,7 +16,7 @@ window.addEventListener("load", () => {
 
     second = object[r];
     object = objects.filter((o) => o != second);
-    
+
     if (clicked % 2 == 1) { // alternate display text between left and right
       x = "left";
       y += spacing;
@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
     }
 
     let kid = document.createElement("p");
-    kid.innerText = `${first} ${first == "they" ? "were" : "was"} looking at ${second}`;
+    kid.innerText = `${first} ${(first == "they" || first == "me" || first == "you") ? "were" : "was"} looking at ${second}`;
     kid.style.textAlign = x;
     kid.style.top = `${y}px`;
     document.body.appendChild(kid);
