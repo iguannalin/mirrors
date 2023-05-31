@@ -16,8 +16,7 @@ window.addEventListener("load", () => {
 
     second = object[r];
     object = objects.filter((o) => o != second);
-    console.log(subject);
-
+    
     if (clicked % 2 == 1) { // alternate display text between left and right
       x = "left";
       y += spacing;
