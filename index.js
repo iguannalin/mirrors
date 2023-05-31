@@ -1,4 +1,4 @@
-const subjects = ["she", "he", "it", "they", "they", "I", "you"];
+const subjects = ["she", "he", "it", "they", "they", "i", "you"];
 const objects = ["her", "him", "it", "them", "them", "me", "you"];
 
 window.addEventListener("load", () => {
