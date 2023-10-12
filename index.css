@@ -9,6 +9,7 @@ body {
   color: rgb(206, 206, 206);
   padding: 5% 10% 10%;
   font-family: 'Courier New', Courier, monospace;
+  text-shadow: #858ebc -2px 2px 8px;
 }
 
 @media screen and (min-width: 0px) {
